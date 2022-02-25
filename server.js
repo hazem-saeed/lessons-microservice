@@ -5,6 +5,7 @@ const connectDB = require('./db');
 
 
 const PORT = process.env.PORT || 8000;
+process.env.TZ = 'UTC';
 const app = express();
 
 ////////////////// CONNECT DATABASE /////////////////////

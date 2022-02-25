@@ -44,14 +44,6 @@ const errorController = async (err, req, res, next) => {
         return res.status(413).send({ message: err.message, success: false });
     }
 
-    if(err.code == 'LIMIT_UNEXPECTED_FILE') {
-        return res.status(413).send({
-            message: 'You are only allowed to upload 5 images',
-            success: false
-        });
-    }
-
-
     if (process.env.NODE_ENV === 'development') {
         sendErrorDev(err, req, res);
     } else if (process.env.NODE_ENV === 'production') {
