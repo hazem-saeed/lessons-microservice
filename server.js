@@ -31,6 +31,5 @@ app.use(errorController);
 
 
 app.listen(PORT, () => {
-    // console.log(process.env.NODE_ENV);
     console.log(`server start in ${PORT}`);
 });

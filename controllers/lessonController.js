@@ -19,7 +19,6 @@ router.route('/')
     // to add the $ to mongodb operators
     let queryStr = JSON.stringify(query);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
-    console.log(JSON.parse(queryStr));
 
     const lessons = await Lesson.find(JSON.parse(queryStr));
 
