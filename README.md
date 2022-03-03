@@ -7,12 +7,18 @@ DB_URL = 'uri of mongodb'
 
 
 # RUN
-sudo docker build . -t colearn-app
-sudo docker run -p8000:8000 colearn-app
 
--to stop docker container:
-sudo docker ps (get the id of the running container)
-sudo docker stop <container id> (kill it gracefully)
+## with npm/nodemon
+    npm server.js
+    nodemon server.js
+
+## with docker
+    sudo docker build . -t colearn-app
+    sudo docker run -p8000:8000 colearn-app
+
+    -to stop docker container:
+    sudo docker ps (get the id of the running container)
+    sudo docker stop <container id> (kill it gracefully)
 
 
 # ENDPOINTS
