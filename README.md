@@ -1,3 +1,7 @@
+# Lessons Microservice
+The aim of this project is to create a set of dates (calendar) for a single lesson. The user provide how many days the lessons are scheduled for (by providing the days themselves as numbers), the starting date, and the final date. Instructions are given below.
+
+
 # ENV
 create an .env file with the following variables:
 NODE_ENV = development
